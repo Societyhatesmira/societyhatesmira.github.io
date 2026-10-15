@@ -1,136 +1,249 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-NG">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dutum Group | Construction Company with Three Decades of Peace of Mind Engineering</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#fff}
-a{text-decoration:none;color:inherit}
-:root{--blue:#0a1931;--gold:#c5a880;--light:#f8f9fa}
-nav{position:fixed;top:0;width:100%;background:#fff;z-index:1000;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;padding:18px 5%;}
-.logo{font-weight:800;font-size:22px;letter-spacing:2px;color:var(--blue)} .logo span{color:var(--gold)}
-.nav-links{display:flex;gap:30px;font-weight:500;font-size:14px;letter-spacing:1px;text-transform:uppercase}
-.nav-links a:hover{color:var(--gold)} .nav-cta{background:var(--blue);color:#fff!important;padding:10px 22px}
-.hero{height:100vh;background:linear-gradient(rgba(10,25,49,0.85),rgba(10,25,49,0.6)),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2071');background-size:cover;background-position:center;display:flex;align-items:center;padding:0 5%;color:#fff;margin-top:60px}
-.hero h1{font-size:56px;line-height:1.1;max-width:700px;font-weight:800} .hero p{max-width:600px;margin:20px 0 30px;font-size:18px;opacity:.9}
-.btn{display:inline-block;padding:14px 32px;font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:13px;transition:.3s}
-.btn-gold{background:var(--gold);color:#000} .btn-gold:hover{background:#fff}
-.btn-outline{border:1px solid #fff;color:#fff;margin-left:15px} .stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--blue);color:#fff;text-align:center;padding:50px 5%}
-.stats h2{font-size:48px;color:var(--gold)} .stats p{font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.7}
-.section{padding:90px 5%} .label{color:var(--gold);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:12px;margin-bottom:12px}
-h2.title{font-size:38px;font-weight:800;color:var(--blue);max-width:600px;line-height:1.2;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
-.card{border:1px solid #eee;padding:35px;transition:.3s} .card:hover{box-shadow:0 20px 40px rgba(0,0,0,.08);border-color:var(--gold)}
-.card h3{color:var(--blue);margin:15px 0 10px} .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:50px}
-.proj{height:380px;background-size:cover;background-position:center;position:relative;display:flex;align-items:end;padding:30px;color:#fff}
-.proj::before{content:'';position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.8))} .proj div{position:relative;z-index:2}
-.contact-bg{background:var(--light)} form{max-width:600px;margin-top:40px;display:grid;gap:15px}
-input,textarea,select{padding:14px 18px;border:1px solid #ddd;font-family:inherit;width:100%} textarea{height:120px}
-footer{background:var(--blue);color:#fff;padding:70px 5% 30px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
-footer h4{color:var(--gold);margin-bottom:20px;letter-spacing:1px;text-transform:uppercase;font-size:13px} footer p,footer a{opacity:.7;font-size:14px;line-height:2;display:block}
-.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding-top:25px;grid-column:1/-1;text-align:center;font-size:12px;letter-spacing:1px;opacity:.5}
-@media(max-width:900px){.hero h1{font-size:36px}.grid,.projects,footer,.stats{grid-template-columns:1fr}.nav-links{display:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a3e7c">
+  <meta name="description" content="Reliable local services for your home or business. Explore our services and request a quote directly on WhatsApp.">
+  <title>Your Business | Reliable Local Services</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%230a3e7c'/%3E%3Cpath d='m10 20 7 7 14-15' fill='none' stroke='%23f06510' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
+  <!-- TEMPLATE SETUP: Replace every 2340000000000 with the real WhatsApp number
+       in international digits only (no +, spaces, or leading local 0).
+       +234 000 000 0000 is a deliberately unassigned demo number.
+       Replace Your Business, [Your city], sample services, photos, and sample reviews before launch. -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a12 12 0 0 0 5.6 1.4h.1c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.3-6.2-3.5-8.3ZM12 21.7a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A9.8 9.8 0 0 1 2 11.9C2 6.4 6.5 2 12 2s10 4.4 10 9.9-4.5 9.8-10 9.8Zm5.5-7.3c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.4.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4s-1 1-1 2.5 1.1 2.9 1.3 3.1c.1.2 2.2 3.4 5.2 4.7.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4Z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 5L20 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9Z" fill="currentColor"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M5 19 19 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<nav>
-<div class="logo">DUTUM <span>GROUP</span></div>
-<div class="nav-links">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-<a href="#contact" class="nav-cta">Get Quote</a>
-</div>
-</nav>
+  <header class="border-b border-line bg-white">
+    <div class="wrap flex min-h-20 items-center justify-between gap-5 lg:min-h-24">
+      <a href="#top" class="inline-flex min-h-11 items-center gap-2 font-bold text-blue sm:gap-3" aria-label="Your Business home">
+        <span class="flex size-8 shrink-0 items-center justify-center rounded-xl bg-blue text-orange sm:size-9"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <span class="text-base whitespace-nowrap sm:text-xl">YOUR BUSINESS</span>
+      </a>
+      <nav aria-label="Main navigation" class="hidden items-center gap-1 rounded-full bg-pale p-1 lg:flex">
+        <a class="nav-link" href="#about">About</a><a class="nav-link" href="#services">Services</a><a class="nav-link" href="#reviews">Reviews</a><a class="nav-link" href="#faq">FAQs</a>
+      </nav>
+      <a class="button hidden lg:inline-flex" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <details class="menu relative lg:hidden">
+        <summary><span class="sr-only">Navigation menu</span><svg class="icon menu-icon" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon close-icon" aria-hidden="true"><use href="#i-close"/></svg></summary>
+        <nav class="menu-panel" aria-label="Mobile navigation">
+          <ul class="grid gap-1"><li><a class="nav-link w-full" href="#about">About</a></li><li><a class="nav-link w-full" href="#services">Services</a></li><li><a class="nav-link w-full" href="#work">Inspiration</a></li><li><a class="nav-link w-full" href="#reviews">Reviews</a></li><li><a class="nav-link w-full" href="#faq">FAQs</a></li><li><a class="nav-link w-full" href="#contact">Contact</a></li></ul>
+          <a class="button mt-4 w-full" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+        </nav>
+      </details>
+    </div>
+  </header>
 
-<section id="home" class="hero">
-<div>
-<div class="label" style="color:var(--gold)">RC 140577 | Est. 1989</div>
-<h1>Construction Company with Three Decades of Peace of Mind Engineering</h1>
-<p>Dutum is a world-class engineering and construction group with a reputation for technical excellence. We create and care for essential assets: hospitals, bridges, schools, roads, petrol stations and other major structures.</p>
-<a href="#projects" class="btn btn-gold">View Our Projects</a>
-<a href="#about" class="btn btn-outline">About Dutum</a>
-</div>
-</section>
+  <main id="main">
+    <section class="hero-background bg-blue text-white" aria-labelledby="hero-title">
+      <div class="wrap grid items-center gap-8 py-10 sm:py-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16 lg:py-20">
+        <div>
+          <h1 id="hero-title" class="text-[clamp(2.125rem,10.8vw,2.875rem)] leading-[1.08] font-bold tracking-tight lg:text-[clamp(3.5rem,5vw,4.5rem)]">Reliable service.<br>Done right.</h1>
+          <p class="mt-5 max-w-lg text-base leading-7 text-white/85 sm:text-lg">Practical help for your home or business, with clear quotes and care from start to finish.</p>
+          <a class="button mt-6 lg:mt-7" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="Get a quote on WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Get a quote<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="mt-4 text-sm leading-6 text-white/75">Serving [Your city] and nearby areas.</p>
+        </div>
+        <img src="images/hero.webp" width="1100" height="920" alt="A craftsperson at work in a woodworking workshop — sample business photo" fetchpriority="high" class="photo aspect-[3/2] lg:aspect-[6/5]">
+      </div>
+    </section>
 
-<div class="stats">
-<div><h2>₦100B+</h2><p>Invested in Projects</p></div>
-<div><h2>300+</h2><p>Projects Completed</p></div>
-<div><h2>10,000+</h2><p>Jobs Created</p></div>
-</div>
+    <div id="highlights" class="bg-pale" aria-label="Our approach">
+      <ul class="wrap grid gap-6 py-9 text-xl leading-7 font-bold md:grid-cols-3 md:py-10">
+        <li class="flex items-center gap-4"><span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue text-white"><svg class="size-7" aria-hidden="true"><use href="#i-check"/></svg></span>Clear communication</li>
+        <li class="flex items-center gap-4"><span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue text-white"><svg class="size-7" aria-hidden="true"><use href="#i-check"/></svg></span>Upfront quotes</li>
+        <li class="flex items-center gap-4"><span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue text-white"><svg class="size-7" aria-hidden="true"><use href="#i-check"/></svg></span>Work done with care</li>
+      </ul>
+    </div>
 
-<section id="about" class="section">
-<div class="label">About Us</div>
-<h2 class="title">We Are More Than Construction — We Build Landmarks That Enhance Lives</h2>
-<p style="max-width:700px;margin-top:15px;color:#555">Dutum Company Limited was incorporated under the laws of the Federal Republic of Nigeria in 1989. We have been among the top-rated Construction Companies in South West and Central parts of Nigeria. Managing Director Temitope Runsewe leads this charge — first-class degree in Computing, MSc Information Systems from LSE, former JP Morgan Chase London.</p>
-<p style="max-width:700px;margin-top:15px;color:#555"><b>Our Values:</b> Safety First, Client First, Excellence, Commitment to Sustainability, Expertise, Dedicated Team. We work in partnership with sophisticated customers who value the highest levels of quality, safety and technical expertise.</p>
-</section>
+    <section id="about" class="section bg-white" aria-labelledby="about-title">
+      <div class="wrap grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
+        <div class="lg:order-2">
+          <h2 id="about-title" class="heading mt-0">About us</h2>
+          <p class="copy mt-5">We help people in [Your city] get things done at home and at work. Tell us what needs doing. We’ll talk through the options, explain the cost, and agree on a plan with you.</p>
+          <ul class="mt-7 grid gap-5">
+            <li class="flex items-start gap-3"><svg class="icon mt-0.5 text-blue" aria-hidden="true"><use href="#i-check"/></svg><div><h3 class="font-bold">Clear quotes, agreed upfront</h3><p class="mt-1 text-sm leading-6 text-muted">Know what’s included before work begins.</p></div></li>
+            <li class="flex items-start gap-3"><svg class="icon mt-0.5 text-blue" aria-hidden="true"><use href="#i-check"/></svg><div><h3 class="font-bold">Help that fits your plans</h3><p class="mt-1 text-sm leading-6 text-muted">One-off jobs or regular support, around your needs.</p></div></li>
+          </ul>
+          <a class="button mt-7 w-full sm:w-auto" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20some%20advice%20on%20a%20job%20I%20have%20in%20mind." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <img src="images/workspace.webp" width="1000" height="720" alt="A carpenter carefully working with wood — sample business photo" loading="lazy" decoding="async" class="photo aspect-[4/3] lg:order-1 lg:aspect-[5/4]">
+      </div>
+    </section>
 
-<section id="services" class="section" style="background:#fcfcfc">
-<div class="label">Our Business Units</div>
-<h2 class="title">Integrated Construction & Infrastructure Solutions</h2>
-<div class="grid">
-<div class="card"><div class="label">01</div><h3>Civil Engineering</h3><p>Design, construction, and maintenance of roads, bridges, canals, dams, airports, sewerage systems, pipelines, railways and structural components.</p></div>
-<div class="card"><div class="label">02</div><h3>Building Construction</h3><p>Addition of structures to real estate, considering costs, expected lifetime, safety regulations, hazards — residential, commercial, industrial, institutional.</p></div>
-<div class="card"><div class="label">03</div><h3>Engineering, Procurement & Construction (EPC)</h3><p>Turnkey solution — design, procurement, construction, commissioning and handover. Single accountability, on time, within budget.</p></div>
-<div class="card"><div class="label">04</div><h3>Facility Management</h3><p>Ensuring built environment is functional, comfortable, safe and efficient by integrating people, place, process and technology. Proactive maintenance.</p></div>
-<div class="card"><div class="label">05</div><h3>Design & Build</h3><p>End-to-end solutions from concept and design through construction and delivery. Cost efficiency, quality execution, timely completion.</p></div>
-<div class="card"><div class="label">06</div><h3>Real Estate Development</h3><p>Development of real estate in rural and urban areas — Dutum Estate, premium residential estate on Waziri Ibrahim Crescent, VI Lagos (JV with PAC Holdings).</p></div>
-</div>
-</section>
+    <section id="services" class="section services-section" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="section-label justify-center text-white/85">What we do</p>
+          <h2 id="services-title" class="heading">Services that work for you.</h2>
+          <p class="mx-auto mt-4 max-w-lg text-base leading-7 text-white/80">Practical solutions for your home or business. Choose a service and tell us what you need.</p>
+        </div>
+        <!-- Rename these six services and edit their WhatsApp messages for each business. -->
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-5">
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20everyday%20help." target="_blank" rel="noopener noreferrer" aria-label="Everyday help — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <h3>Everyday help</h3><p>Practical help with the essentials, taken care of properly.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20specialist%20work." target="_blank" rel="noopener noreferrer" aria-label="Specialist work — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h5m4 0h9M3 12h11m4 0h3M3 18h3m4 0h11"/><circle cx="10" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg></span>
+            <h3>Specialist work</h3><p>The right skills for a job that needs a closer look.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20one-off%20project." target="_blank" rel="noopener noreferrer" aria-label="One-off projects — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m13 3-9 11h7l-1 7 10-12h-7l1-6Z"/></svg></span>
+            <h3>One-off projects</h3><p>A single task or a bigger idea, planned around you.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20ongoing%20care." target="_blank" rel="noopener noreferrer" aria-label="Ongoing care — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10a8 8 0 0 0-14-4L3 9m0-6v6h6M4 14a8 8 0 0 0 14 4l3-3m0 6v-6h-6"/></svg></span>
+            <h3>Ongoing care</h3><p>Regular maintenance and support to keep things working.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20home%20services." target="_blank" rel="noopener noreferrer" aria-label="Home services — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7M5 9v11h5v-6h4v6h5V9"/></svg></span>
+            <h3>Home services</h3><p>Thoughtful solutions for a home that works for you.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="service-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20business%20support." target="_blank" rel="noopener noreferrer" aria-label="Business support — enquire on WhatsApp">
+            <span class="service-icon" aria-hidden="true"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12l9 4 9-4M12 14v4"/></svg></span>
+            <h3>Business support</h3><p>Reliable help for your workspace and everyday needs.</p>
+            <span class="service-action">Discuss this service<svg class="size-4" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+        <div class="mt-8 flex flex-col items-center gap-5 rounded-3xl border border-white/15 bg-blue-deep/35 p-6 text-center sm:p-7 lg:mt-10 lg:flex-row lg:justify-between lg:text-left">
+          <div><h3 class="text-xl font-bold">Not sure where to start?</h3><p class="mt-2 text-sm leading-6 text-white/80">Send us a photo or a few details. We’ll help you find the right service.</p></div>
+          <a class="button w-full shrink-0 sm:w-auto" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20some%20help%20choosing%20the%20right%20service." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
 
-<section id="projects" class="section">
-<div class="label">Selected Projects</div>
-<h2 class="title">Over 300 Landmarks Across Nigeria</h2>
-<div class="projects">
-<div class="proj" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00')"><div><h3>Pedestrian Bridges FCT Abuja</h3><p>Federal Capital Territory with disabled access — inclusive infrastructure</p></div></div>
-<div class="proj" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811')"><div><h3>The Art Hotel Lagos</h3><p>Hospitality project showcasing diversification and luxury delivery</p></div></div>
-<div class="proj" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d')"><div><h3>Waziri Ibrahim Residential Estate</h3><p>20 Units Premium Estate, Victoria Island — JV with PAC Holdings / BRICS</p></div></div>
-<div class="proj" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab')"><div><h3>Harvard Lakefront Estate, Jabi Abuja</h3><p>Residential Development, Institutional & Commercial Complexes</p></div></div>
-</div>
-</section>
+    <section id="process" class="section bg-pale" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="section-label justify-center">How it works</p>
+          <h2 id="process-title" class="heading">From chat to job done.</h2>
+        </div>
+        <div class="mt-8 rounded-3xl bg-white p-5 sm:mt-10 sm:p-8 lg:p-10">
+          <ol class="grid gap-8 md:grid-cols-3 md:gap-10" role="list">
+            <li class="process-step">
+              <svg class="process-illustration" viewBox="0 0 80 72" fill="none" aria-hidden="true"><ellipse cx="39" cy="47" rx="35" ry="18" transform="rotate(-12 39 47)" class="fill-orange/20"/><path d="M23 10h34a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6H39L25 54V44h-2a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="M28 23h23M28 31h15" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>
+              <div class="md:mt-5"><span class="process-index" aria-hidden="true">Step 01</span><h3 class="process-title">Message us</h3><p class="process-copy">Tell us what you need on WhatsApp. Photos welcome.</p></div>
+              <svg class="process-connector" viewBox="0 0 200 40" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 19C50 46 118-8 191 19" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 6" stroke-linecap="round"/><path d="m181 7 12 13-17 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>
+            <li class="process-step">
+              <svg class="process-illustration" viewBox="0 0 80 72" fill="none" aria-hidden="true"><ellipse cx="39" cy="47" rx="35" ry="18" transform="rotate(-12 39 47)" class="fill-orange/20"/><path d="M30 12h-8a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V16a4 4 0 0 0-4-4h-8" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><rect x="30" y="7" width="18" height="11" rx="3" stroke="currentColor" stroke-width="2.3"/><path d="m29 34 5 5 12-12M29 48h19" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="md:mt-5"><span class="process-index" aria-hidden="true">Step 02</span><h3 class="process-title">Get your quote</h3><p class="process-copy">Agree on the work, price, and a suitable time.</p></div>
+              <svg class="process-connector" viewBox="0 0 200 40" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 19C50-8 118 46 191 19" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 6" stroke-linecap="round"/><path d="m178 9 16 10-11 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </li>
+            <li class="process-step">
+              <svg class="process-illustration" viewBox="0 0 80 72" fill="none" aria-hidden="true"><ellipse cx="39" cy="47" rx="35" ry="18" transform="rotate(-12 39 47)" class="fill-orange/20"/><circle cx="40" cy="30" r="23" stroke="currentColor" stroke-width="2.3"/><path d="m28 30 8 8 17-18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="md:mt-5"><span class="process-index" aria-hidden="true">Step 03</span><h3 class="process-title">We get to work</h3><p class="process-copy">We take care of the job and keep you updated.</p></div>
+            </li>
+          </ol>
+          <div class="mt-7 border-t border-line pt-6 text-center md:mt-9">
+            <a class="button w-full sm:w-auto" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20discuss%20a%20job%20and%20get%20a%20quote." target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Start on WhatsApp<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="contact" class="section contact-bg">
-<div class="label">Contact Us</div>
-<h2 class="title">Let's Build Something Exceptional Together</h2>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:30px" class="contact-grid">
-<div>
-<p><b>Lagos (Head Office):</b><br>2 Abisogun Road, Off Palace Road, Oniru Estate, Maroko, Lagos<br>Phone: +234 805 831 7200</p><br>
-<p><b>Abuja:</b><br>10 Danube Close, Off Danube Crescent, Maitama, Abuja<br>Phone: +234 805 831 7200</p><br>
-<p><b>Ibadan:</b><br>Isaac's Place, Opp TOTAL Petrol Station, Onireke G.R.A, Dugbe, Ibadan<br>Phone: +234 706 967 1901</p><br>
-<p><b>Email:</b> info@dutumgroup.com<br><b>Website:</b> dutumgroup.com</p>
-</div>
-<form onsubmit="event.preventDefault(); window.open('https://wa.me/2348058317200?text=Hello Dutum, I saw your projects and want a quote','_blank')">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<select><option>Civil Engineering</option><option>Building Construction</option><option>EPC</option><option>Facility Management</option><option>Design & Build</option><option>Real Estate</option></select>
-<textarea placeholder="Project Details" required></textarea>
-<button type="submit" class="btn btn-gold" style="border:none;cursor:pointer;width:100%">Send Message via WhatsApp</button>
-</form>
-</div>
-</section>
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="max-w-2xl">
+          <h2 id="work-title" class="heading mt-0">Ideas for your space.</h2>
+          <p class="copy mt-4">Choose a photo to discuss your idea on WhatsApp.</p>
+        </div>
+        <!-- Illustrative stock photography. Replace with genuine project photos for each business. -->
+        <div class="mt-8 grid gap-8 md:grid-cols-3 lg:mt-10 lg:gap-9">
+          <a class="work-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20discuss%20some%20specialist%20work." target="_blank" rel="noopener noreferrer" aria-label="Specialist work — discuss your idea on WhatsApp">
+            <img src="images/workspace.webp" width="1000" height="720" alt="Woodworking in progress — illustrative service image" loading="lazy" decoding="async" class="photo aspect-[8/5]">
+            <div class="mt-4 flex items-center justify-between gap-4"><h3 class="text-lg leading-7 font-bold">Specialist work</h3><svg class="size-5 shrink-0 text-whatsapp" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          </a>
+          <a class="work-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20discuss%20an%20improvement%20for%20my%20home." target="_blank" rel="noopener noreferrer" aria-label="For your home — discuss your idea on WhatsApp">
+            <img src="images/project-interior.webp" width="800" height="500" alt="A bright living space — illustrative service image" loading="lazy" decoding="async" class="photo aspect-[8/5]">
+            <div class="mt-4 flex items-center justify-between gap-4"><h3 class="text-lg leading-7 font-bold">For your home</h3><svg class="size-5 shrink-0 text-whatsapp" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          </a>
+          <a class="work-card" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20discuss%20some%20work%20for%20my%20business." target="_blank" rel="noopener noreferrer" aria-label="For your business — discuss your idea on WhatsApp">
+            <img src="images/project-space.webp" width="800" height="500" alt="An interior with wooden details — illustrative service image" loading="lazy" decoding="async" class="photo aspect-[8/5]">
+            <div class="mt-4 flex items-center justify-between gap-4"><h3 class="text-lg leading-7 font-bold">For your business</h3><svg class="size-5 shrink-0 text-whatsapp" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          </a>
+        </div>
+        <p class="mt-6 text-sm leading-6 text-muted">Sample photography.</p>
+      </div>
+    </section>
 
-<footer>
-<div><div class="logo" style="color:#fff">DUTUM <span>GROUP</span></div><p style="margin-top:15px">World-class engineering and construction group with reputation for technical excellence founded on more than 30 years of experience. Safety and client first.</p></div>
-<div><h4>Services</h4><a>Civil Engineering</a><a>Building Construction</a><a>EPC</a><a>Facility Management</a><a>Design & Build</a></div>
-<div><h4>Company</h4><a href="#about">About Us</a><a href="#projects">Projects</a><a>Careers</a><a>Privacy Policy</a></div>
-<div><h4>Contact</h4><a>info@dutumgroup.com</a><a>+234 805 831 7200</a><a>Lagos | Abuja | Ibadan</a></div>
-<div class="copy">© 2026 DUTUM COMPANY LIMITED — RC 140577 — All Rights Reserved. 3 Decades of Peace of Mind Engineering.</div>
-</footer>
+    <section id="reviews" class="section bg-blue/5" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="mx-auto max-w-2xl text-center"><p class="section-label justify-center">Customer reviews</p><h2 id="reviews-title" class="heading">What our customers say.</h2><p class="copy mx-auto mt-4 max-w-lg">Customer experiences, in their own words.</p></div>
+        <!-- Template samples only: replace quotes, names, services, and ratings with genuine reviews before launch. -->
+        <div class="mt-8 grid gap-4 lg:mt-10 lg:grid-cols-3 lg:gap-5">
+          <figure class="flex h-full flex-col rounded-3xl border border-blue/5 bg-white p-6 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-3"><div class="flex gap-0.5 text-orange" role="img" aria-label="Sample five-star rating"><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg></div><span class="text-[0.625rem] font-bold uppercase tracking-widest text-muted">Sample review</span></div>
+            <blockquote class="mt-6 grow text-base leading-7 text-ink">“Clear communication from the first message. The work and price were explained before we booked.”</blockquote>
+            <figcaption class="mt-7 flex items-center gap-3 border-t border-line/70 pt-5"><span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-blue/5 text-blue" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg></span><div><p class="text-sm font-bold">[Customer name]</p><p class="mt-1 text-xs leading-5 text-muted">[Service received]</p></div></figcaption>
+          </figure>
+          <figure class="flex h-full flex-col rounded-3xl border border-blue/5 bg-white p-6 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-3"><div class="flex gap-0.5 text-orange" role="img" aria-label="Sample five-star rating"><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg></div><span class="text-[0.625rem] font-bold uppercase tracking-widest text-muted">Sample review</span></div>
+            <blockquote class="mt-6 grow text-base leading-7 text-ink">“The team kept us updated and took care with the details. Everything felt straightforward.”</blockquote>
+            <figcaption class="mt-7 flex items-center gap-3 border-t border-line/70 pt-5"><span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-blue/5 text-blue" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg></span><div><p class="text-sm font-bold">[Customer name]</p><p class="mt-1 text-xs leading-5 text-muted">[Service received]</p></div></figcaption>
+          </figure>
+          <figure class="flex h-full flex-col rounded-3xl border border-blue/5 bg-white p-6 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-3"><div class="flex gap-0.5 text-orange" role="img" aria-label="Sample five-star rating"><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg><svg class="size-4" aria-hidden="true"><use href="#i-star"/></svg></div><span class="text-[0.625rem] font-bold uppercase tracking-widest text-muted">Sample review</span></div>
+            <blockquote class="mt-6 grow text-base leading-7 text-ink">“Easy to arrange on WhatsApp. They listened to what we needed and agreed on a suitable time.”</blockquote>
+            <figcaption class="mt-7 flex items-center gap-3 border-t border-line/70 pt-5"><span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-blue/5 text-blue" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg></span><div><p class="text-sm font-bold">[Customer name]</p><p class="mt-1 text-xs leading-5 text-muted">[Service received]</p></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-a.addEventListener('click',function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-});
-});
-</script>
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="wrap grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <div><p class="section-label">Good to know</p><h2 id="faq-title" class="heading max-w-sm">A few quick answers.</h2><p class="copy mt-5">Still have a question? We’re a message away.</p><a class="text-link mt-4" href="https://wa.me/2340000000000?text=Hello%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank" rel="noopener noreferrer">Ask us on WhatsApp<svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+        <div class="grid content-start gap-3">
+          <details class="faq"><summary>Which areas do you cover?<svg class="icon plus text-blue" aria-hidden="true"><use href="#i-plus"/></svg><svg class="icon minus text-blue" aria-hidden="true"><use href="#i-minus"/></svg></summary><p class="copy pb-6">We serve [Your city] and nearby areas. Send us your location on WhatsApp so we can confirm coverage before you book.</p></details>
+          <details class="faq"><summary>What should I send for a quote?<svg class="icon plus text-blue" aria-hidden="true"><use href="#i-plus"/></svg><svg class="icon minus text-blue" aria-hidden="true"><use href="#i-minus"/></svg></summary><p class="copy pb-6">Tell us what you need, your location, and your preferred date. A few photos help us understand the job. We’ll discuss the details and let you know if a visit is needed to quote.</p></details>
+          <details class="faq"><summary>Can I book in advance?<svg class="icon plus text-blue" aria-hidden="true"><use href="#i-plus"/></svg><svg class="icon minus text-blue" aria-hidden="true"><use href="#i-minus"/></svg></summary><p class="copy pb-6">Yes. Send your preferred date and the service you need on WhatsApp. We’ll confirm availability and agree on a suitable time with you.</p></details>
+          <details class="faq"><summary>Do you take on smaller jobs?<svg class="icon plus text-blue" aria-hidden="true"><use href="#i-plus"/></svg><svg class="icon minus text-blue" aria-hidden="true"><use href="#i-minus"/></svg></summary><p class="copy pb-6">You can enquire about a single task or ongoing support. Share a few details and we’ll let you know how we can help.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-blue text-white" aria-labelledby="contact-title">
+      <div class="wrap grid items-center gap-9 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
+        <div><p class="section-label text-white/85">Let’s get started</p><h2 id="contact-title" class="heading max-w-lg lg:text-5xl">One message.<br>A clear next step.</h2><p class="mt-5 max-w-md text-base leading-7 text-white/85 sm:text-lg">Tell us what you need and we’ll take it from there. Ask a question, share a photo, or request a quote.</p><p class="mt-7 inline-flex items-center gap-3 text-sm text-white/80"><svg class="size-5 text-orange" aria-hidden="true"><use href="#i-check"/></svg>Confirm the details before you book.</p></div>
+        <div class="rounded-3xl bg-white p-5 text-ink sm:p-8">
+          <h3 class="text-2xl font-bold tracking-tight">How can we help?</h3><p class="copy mt-3">Start with these three things:</p>
+          <ul class="mt-5 grid gap-3 text-sm leading-6"><li class="flex items-center gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-pale text-xs font-bold text-blue" aria-hidden="true">1</span>What you need help with</li><li class="flex items-center gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-pale text-xs font-bold text-blue" aria-hidden="true">2</span>Your location</li><li class="flex items-center gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-pale text-xs font-bold text-blue" aria-hidden="true">3</span>A photo, if it helps</li></ul>
+          <a class="button mt-7 w-full" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20a%20quote.%0AService%20needed%3A%20%0ALocation%3A%20%0APreferred%20date%3A%20" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp<svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="mt-4 text-center text-xs leading-5 text-muted">+234 000 000 0000 · Demo number</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-deep text-white">
+    <div class="wrap pt-12 pb-7"><div class="grid gap-9 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr]">
+      <div><a href="#top" class="inline-flex min-h-11 items-center gap-3 text-lg font-bold" aria-label="Your Business home"><span class="flex size-8 items-center justify-center rounded-xl bg-white text-blue"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>YOUR BUSINESS</a><p class="mt-4 max-w-xs text-sm leading-6 text-white/80">Practical help for your home or business.<br>Serving [Your city] and nearby areas.</p></div>
+      <nav aria-label="Footer navigation"><h2 class="font-bold">Explore</h2><ul class="mt-3 grid grid-cols-2 gap-x-6 text-sm text-white/85"><li><a class="inline-flex min-h-11 items-center" href="#services">Services</a></li><li><a class="inline-flex min-h-11 items-center" href="#about">About</a></li><li><a class="inline-flex min-h-11 items-center" href="#work">Inspiration</a></li><li><a class="inline-flex min-h-11 items-center" href="#reviews">Reviews</a></li><li><a class="inline-flex min-h-11 items-center" href="#faq">FAQs</a></li></ul></nav>
+      <div><h2 class="font-bold">Contact</h2><a class="mt-3 inline-flex min-h-11 items-center gap-3 text-sm text-white/85" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener noreferrer"><svg class="size-5" aria-hidden="true"><use href="#i-wa"/></svg>+234 000 000 0000</a><p class="text-sm leading-6 text-white/80">Serving [Your city], Nigeria.</p></div>
+    </div><div class="mt-10 flex flex-col gap-3 border-t border-white/20 pt-6 text-xs leading-5 text-white/75 sm:flex-row sm:justify-between"><p>© 2026 Your Business. All rights reserved.</p><a class="inline-flex min-h-11 items-center self-start underline underline-offset-4" href="#top">Back to top</a></div></div>
+  </footer>
+  <aside class="mobile-contact" aria-label="Quick WhatsApp enquiry">
+    <a class="button w-full" href="https://wa.me/2340000000000?text=Hello%2C%20I%27d%20like%20a%20quote.%0AService%20needed%3A%20%0ALocation%3A%20%0APreferred%20date%3A%20" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Get a quote on WhatsApp</a>
+  </aside>
 </body>
 </html>
