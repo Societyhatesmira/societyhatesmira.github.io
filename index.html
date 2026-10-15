@@ -3,54 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHM KICKS - Curated Luxury Kicks</title>
+<title>DUTUM GROUP | Peace of Mind Engineering Since 1989</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Helvetica,Arial,sans-serif}
-body{background:#0a0a0a;color:#fff;line-height:1.6}
-.header{text-align:center;padding:60px 20px 30px}
-.header h1{font-size:52px;font-weight:900;letter-spacing:6px}
-.header h1 span{color:#ff6a00}
-.header p.sub{color:#999;letter-spacing:3px;margin-top:10px;font-size:14px;text-transform:uppercase}
-.header p.moto{color:#ccc;margin-top:20px;max-width:500px;margin:0 auto;font-size:15px}
-.btn-orange{display:inline-block;background:#ff6a00;color:#000;padding:16px 40px;border-radius:30px;font-weight:800;text-decoration:none;margin-top:30px}
-.whatsapp-float{position:fixed;bottom:25px;right:20px;background:#25D366;color:#fff;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:700;z-index:100}
-.catalog{padding:50px 20px;max-width:1100px;margin:0 auto}
-.catalog h2{text-align:center;font-size:28px;letter-spacing:4px}
-.catalog p.desc{text-align:center;color:#777;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:#151515;border-radius:18px;overflow:hidden;border:1px solid #222}
-.card-img{height:280px;background:#1c1c1c;display:flex;align-items:center;justify-content:center;font-size:50px;color:#333}
-.card-body{padding:20px}
-.card-body h3{font-size:16px}
-.card-body p.price{color:#ff6a00;font-weight:800;margin-top:8px;font-size:18px}
-.card-body a.order{display:block;text-align:center;margin-top:15px;background:#fff;color:#000;padding:10px;border-radius:20px;text-decoration:none;font-weight:700;font-size:14px}
-.footer{text-align:center;padding:50px 20px;color:#555;font-size:13px;border-top:1px solid #1a1a1a;margin-top:40px}
+:root{--black:#0C0C0C;--cream:#F5F2ED;--gold:#C6A87A;--gray:rgba(12,12,12,.5)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--black);font-family:'Inter',sans-serif;overflow-x:hidden;cursor:none}
+.serif{font-family:'Instrument Serif',serif}
+a,button{cursor:none}
+/* PRELOADER */
+#loader{position:fixed;inset:0;background:var(--black);z-index:9999;display:flex;align-items:center;justify-content:center;transition:1s cubic-bezier(.77,0,.175,1)}
+#loader h1{color:var(--cream);font-family:'Instrument Serif',serif;font-size:22px;letter-spacing:6px;overflow:hidden}
+#loader h1 span{display:block;transform:translateY(100%);animation:loadIn .8s forwards}
+@keyframes loadIn{to{transform:translateY(0)}}
+/* CURSOR */
+.cursor{position:fixed;top:0;left:0;width:20px;height:20px;border:1px solid var(--black);border-radius:50%;pointer-events:none;z-index:99999;mix-blend-mode:difference;background:white;transition:.15s}
+.cursor-follower{position:fixed;top:0;left:0;width:70px;height:70px;border:1px solid rgba(0,0,0,.1);border-radius:50%;pointer-events:none;z-index:99998;transition:.3s cubic-bezier(.23,1,.32,1);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:2px;text-transform:uppercase;opacity:0}
+/* NAV */
+nav{position:fixed;top:0;width:100%;padding:22px 0;z-index:100;mix-blend-mode:difference;color:white;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{max-width:1400px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Instrument Serif',serif;font-size:26px;letter-spacing:3px}
+.nav-links{display:flex;gap:40px;list-style:none;font-size:11px;letter-spacing:2.5px;text-transform:uppercase}
+.nav-links a{color:inherit;text-decoration:none;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:currentColor;transition:.4s}
+.nav-links a:hover::after{width:100%}
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;padding:0 40px 80px;background:var(--cream);overflow:hidden}
+.hero-bg{position:absolute;top:0;right:0;width:58%;height:100%;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%)}
+.hero-content{position:relative;z-index:2;max-width:1400px;width:100%;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:end}
+.hero-title{font-family:'Instrument Serif',serif;font-size:7.8vw;line-height:.85;letter-spacing:-3px;font-weight:400}
+.hero-title i{font-style:italic;color:var(--gold);display:block}
+.hero-side p{font-size:16px;line-height:1.7;opacity:.6;font-weight:300;margin-bottom:30px}
+.btn-mag{position:relative;display:inline-flex;align-items:center;gap:15px;border:1px solid var(--black);padding:18px 32px;font-size:11px;letter-spacing:3px;text-transform:uppercase;text-decoration:none;color:var(--black);overflow:hidden;transition:.4s}
+.btn-mag::before{content:'';position:absolute;inset:0;background:var(--black);transform:translateY(100%);transition:.6s cubic-bezier(.77,0,.175,1);z-index:-1}
+.btn-mag:hover{color:white}.btn-mag:hover::before{transform:translateY(0)}
+.float-badge{position:absolute;top:140px;left:40px;background:white;padding:18px 22px;box-shadow:0 20px 40px rgba(0,0,0,.08);display:flex;align-items:center;gap:15px;animation:float 4s ease-in-out infinite;z-index:3}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.float-badge b{font-size:32px;font-family:'Instrument Serif',serif}
+/* MARQUEE */
+.marquee{background:var(--black);color:var(--cream);padding:22px 0;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:flex;animation:marquee 40s linear infinite}
+.marquee-inner span{font-family:'Instrument Serif',serif;font-size:28px;margin-right:60px;letter-spacing:1px;opacity:.8}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* STATS */
+.stats{padding:100px 40px;display:grid;grid-template-columns:repeat(3,1fr);max-width:1400px;margin:0 auto;gap:40px;border-top:1px solid rgba(0,0,0,.08)}
+.stat h2{font-family:'Instrument Serif',serif;font-size:88px;line-height:1;font-weight:400}
+.stat h2 sup{font-size:32px;color:var(--gold)}
+.stat p{margin-top:15px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;opacity:.5}
+/* SERVICES */
+.section{padding:120px 40px;max-width:1400px;margin:0 auto}
+.label{font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.4;margin-bottom:40px;display:flex;align-items:center;gap:12px}
+.label::before{content:'';width:30px;height:1px;background:var(--black);opacity:.2}
+.services-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.s-card{grid-column:span 4;background:white;padding:45px 35px;position:relative;overflow:hidden;transition:.6s cubic-bezier(.23,1,.32,1);border:1px solid rgba(0,0,0,.06)}
+.s-card:nth-child(4),.s-card:nth-child(5){grid-column:span 6}
+.s-card:hover{transform:translateY(-10px) rotate(1deg);box-shadow:0 40px 80px rgba(0,0,0,.12)}
+.s-card-num{font-size:11px;letter-spacing:2px;opacity:.3;margin-bottom:30px}
+.s-card h3{font-family:'Instrument Serif',serif;font-size:32px;line-height:1.1;margin-bottom:15px;font-weight:400}
+.s-card p{font-size:14px;line-height:1.7;opacity:.6;font-weight:300}
+.s-card .img{height:180px;margin-top:30px;overflow:hidden;background:#eee}
+.s-card .img img{width:100%;height:100%;object-fit:cover;transition:1s}
+.s-card:hover .img img{transform:scale(1.1)}
+/* PROJECTS */
+.projects{padding:0;background:var(--black);color:var(--cream)}
+.projects-inner{padding:120px 40px;max-width:1400px;margin:0 auto}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);margin-top:60px}
+.p-item{aspect-ratio:4/3;position:relative;overflow:hidden;background:#111}
+.p-item img{width:100%;height:100%;object-fit:cover;opacity:.7;transition:1.2s cubic-bezier(.77,0,.175,1)}
+.p-item:hover img{opacity:1;transform:scale(1.08)}
+.p-meta{position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);transform:translateY(10px);opacity:0;transition:.6s}
+.p-item:hover .p-meta{transform:translateY(0);opacity:1}
+.p-meta span{font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.6}
+.p-meta h4{font-family:'Instrument Serif',serif;font-size:22px;margin-top:5px}
+/* EPC SECTION */
+.epc{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.epc h2{font-family:'Instrument Serif',serif;font-size:64px;line-height:.9;font-weight:400}
+.epc-list{margin-top:40px;display:flex;flex-direction:column;gap:20px}
+.epc-list li{display:flex;gap:15px;list-style:none;font-size:14px;line-height:1.6;opacity:.7}
+.epc-list li b{color:var(--gold)}
+/* CONTACT */
+.contact{background:var(--gold);padding:100px 40px;text-align:center}
+.contact h2{font-family:'Instrument Serif',serif;font-size:6vw;line-height:.9}
+@media(max-width:900px){body{cursor:auto}.cursor,.cursor-follower{display:none}.hero-content{grid-template-columns:1fr}.hero-title{font-size:14vw}.hero-bg{width:100%;opacity:.3}.services-grid .s-card{grid-column:span 12}.p-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.epc{grid-template-columns:1fr}.nav-links{display:none}}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>SHM<br><span>KICKS</span></h1>
-<p class="sub">Curated Luxury Kicks | SA x Netherlands</p>
-<p class="moto">Not every sneaker. Only the ones that make society hate. Premium sourcing from Utrecht to Johannesburg.</p>
-<a class="btn-orange" href="https://wa.me/2349163364501?text=Hello%20SHM%20KICKS%2C%20I%20want%20to%20see%20your%20catalog">SHOP ON WHATSAPP</a>
-</div>
-<div class="catalog">
-<h2>CURATED DROP</h2>
-<p class="desc">Tap Order to chat us on WhatsApp • Pay on Delivery in Lagos</p>
-<div class="grid">
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>LOUIS VUITTON LV TRAINER - GREEN</h3><p class="price">₦85,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20LV%20Trainer%20Green">Order on WhatsApp</a></div></div>
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>NEW BALANCE 550 - WHITE/GREEN</h3><p class="price">₦52,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20NB%20550">Order on WhatsApp</a></div></div>
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>NIKE DUNK LOW - PANDA</h3><p class="price">₦48,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20Nike%20Dunk%20Panda">Order on WhatsApp</a></div></div>
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>ADIDAS SAMBA - CLASSIC BLACK</h3><p class="price">₦45,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20Adidas%20Samba">Order on WhatsApp</a></div></div>
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>TRAVIS SCOTT x JORDAN 1 LOW</h3><p class="price">₦78,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20Travis%20Jordan%201">Order on WhatsApp</a></div></div>
-<div class="card"><div class="card-img">👟</div><div class="card-body"><h3>BALENCIAGA RUNNER - BEIGE</h3><p class="price">₦92,000</p><a class="order" href="https://wa.me/2349163364501?text=Hello%20SHM%2C%20I%20want%20Balenciaga%20Runner">Order on WhatsApp</a></div></div>
-</div>
-</div>
-<div class="footer">
-<p>SHM KICKS © 2026 • Utrecht, NL → Johannesburg, SA → Lagos, NG</p>
-<p style="margin-top:10px">WhatsApp: 09163364501 • Delivery Nationwide</p>
-<p style="margin-top:15px;color:#ff6a00">Made to make society hate.</p>
-</div>
-<a class="whatsapp-float" href="https://wa.me/2349163364501?text=Hello%20SHM%20KICKS">WhatsApp Us</a>
-</body>
-</html>
+<div id="loader"><h1><span>DUTUM GROUP — LOADING</span></h1></div>
+<div class="cursor"></div>
+<div class="cursor-follower">VIEW</div>
+
+<nav><div class="nav-inner"><div class="logo">DUTUM</div><ul class="nav-links"><li><a href="#services">Services</a></li><li><a href="#projects">Projects (300+)</a></li><li><a href="#epc">EPC</a></li><li><a href="#">Lagos / Abuja / Ibadan</a></li></ul><div style="font-size:11px;letter-spacing:2px">EST. 1989</div></div></nav>
+
+<section class="hero">
+<div class="hero-bg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"></div>
+<div class="float-badge"><b>30+</b><div style="line-height:1.2;font-size:12px">YEARS<br>PEACE OF MIND<br>ENGINEERING</div></div>
+<div class="hero-content">
+<h1 class="hero-title">We are a Construction <i>Company with Three Decades of Peace of Mind Engineering</i></h1>
+<div class="hero-side">
