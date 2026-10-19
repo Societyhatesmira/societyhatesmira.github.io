@@ -3,97 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WoodCraft Pro | Reliable Carpentry - 09163364501</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<title>WOODCRAFT PRO — Website Design Mockup</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--dark:#0f0f0f;--orange:#ff8a1f;--light:#f8f6f2;--gray:#7a7a7a}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Manrope',sans-serif;background:var(--light);color:var(--dark);line-height:1.6}
-h1,h2{font-family:'Playfair Display',serif}
-header{position:fixed;top:0;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);display:flex;justify-content:space-between;align-items:center;padding:16px 5%;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.06)}
-.logo{font-weight:800;font-size:22px}.logo span{color:var(--orange)}
-nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:700;font-size:13px}
-.btn-wa{background:#25D366;color:white;padding:12px 22px;border-radius:100px;text-decoration:none;font-weight:800;display:inline-flex;transition:.2s}
-.btn-wa:hover{transform:translateY(-2px)}
-.btn-dark{padding:12px 22px;border-radius:100px;border:1.6px solid var(--dark);text-decoration:none;color:var(--dark);font-weight:800}
-section{padding:90px 5%}
-.hero{min-height:90vh;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:130px}
-.hero h1{font-size:58px;line-height:.9;letter-spacing:-2px}
-.hero h1 span{color:var(--orange)}
-.hero-img{border-radius:28px;overflow:hidden;height:600px}
+body{background:#070708;color:#fff;font-family:Inter,sans-serif}
+.top{text-align:center;font-size:9px;letter-spacing:4px;color:#7a4a24;padding:22px 0}
+.wrap{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.7fr 360px;gap:26px;padding:0 18px 40px}
+@media(max-width:1020px){.wrap{grid-template-columns:1fr}}
+.left{background:#141416;border:1px solid #232326;border-radius:22px;overflow:hidden}
+.head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid #1d1d1f}
+.logo{font-weight:800;font-size:18px;display:flex;gap:6px}.logo span{color:#ff7a18}
+.nav{display:flex;gap:18px;align-items:center}.nav a{color:#7a7a7a;text-decoration:none;font-size:11px;font-weight:600}.nav a.active{color:#ff7a18}
+.consult{border:1px solid #8a4a1e;color:#ffb26a;background:#1d140d;padding:8px 16px;border-radius:10px;font-size:11px;font-weight:700;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;padding:26px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}}
+.hero h1{font-size:40px;line-height:.95;font-weight:800}
+.hero p{color:#8a8a8a;font-size:11.5px;line-height:1.6;margin:14px 0 20px;max-width:360px}
+.btns{display:flex;gap:10px}
+.b-orange{background:#ff8a1f;color:#000;padding:11px 18px;border-radius:10px;font-size:12px;font-weight:800;text-decoration:none}
+.b-ghost{background:#1f1f21;border:1px solid #2c2c2e;color:#ff8a1f;padding:11px 18px;border-radius:10px;font-size:12px;font-weight:700;text-decoration:none}
+.hero-img{border-radius:16px;overflow:hidden;height:360px;background:#222;border:1px solid #2a2a2a}
 .hero-img img{width:100%;height:100%;object-fit:cover}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-.card{background:white;padding:26px;border-radius:20px;border:1px solid #eee;transition:.3s}
-.card:hover{transform:translateY(-4px);border-color:var(--dark)}
-.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
-.project{border-radius:22px;overflow:hidden;height:420px;position:relative}
-.project img{width:100%;height:100%;object-fit:cover}
-.overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);display:flex;align-items:flex-end;padding:20px;color:white}
-.contact-box{background:var(--dark);color:white;border-radius:28px;display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:50px}
-footer{padding:30px 5%;display:flex;justify-content:space-between;color:var(--gray);font-size:13px;border-top:1px solid #eee}
-@media(max-width:900px){.hero,.grid-3,.project-grid,.contact-box{grid-template-columns:1fr}.hero h1{font-size:38px}.hero-img{height:420px}}
+.stats{display:flex;gap:8px;margin-top:18px}
+.stat{flex:1;background:#1a1a1d;border:1px solid #26262a;border-radius:12px;padding:10px 12px;display:flex;gap:8px}
+.stat b{font-size:11px}.stat small{font-size:9px;color:#666;display:block}
+.feat{padding:18px 22px 6px}.feat h2{font-size:18px;font-weight:800}.feat p{font-size:10px;color:#777;margin-top:4px}
+.grid{padding:12px 18px 18px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.proj{background:#1a1a1d;border:1px solid #26262a;border-radius:14px;overflow:hidden}
+.proj img{width:100%;height:170px;object-fit:cover}
+.proj .cap{padding:12px;text-align:center}.proj .cap b{font-size:13px}.proj .cap span{font-size:9px;color:#ff8a1f;display:block;margin-top:4px}
+.foot{display:flex;justify-content:space-between;padding:12px 18px;border-top:1px solid #1e1e20;font-size:9px;color:#666;flex-wrap:wrap;gap:10px}
+.badge{border:1px solid #3d2a15;border-radius:20px;padding:6px 12px;color:#b06a2a;background:#19120a}
+.phone-col{display:flex;justify-content:center}
+.phone{width:340px;background:#141416;border:6px solid #1e1e20;border-radius:40px;overflow:hidden}
+.p-head{display:flex;justify-content:space-between;padding:16px 18px}
+.p-hero{padding:0 18px}.p-hero h1{font-size:26px;line-height:1;font-weight:800}.p-hero p{font-size:10px;color:#888;margin:8px 0 14px}
+.p-img{border-radius:16px;overflow:hidden;height:210px;background:#222;margin:14px 0}.p-img img{width:100%;height:100%;object-fit:cover}
+.p-sec{padding:10px 18px 18px}.p-sec h3{text-align:center;font-size:18px;margin:10px 0 14px}
+.p-card{background:#1c1c1f;border:1px solid #2a2a2e;border-radius:14px;overflow:hidden;margin-bottom:12px}.p-card img{width:100%;height:130px;object-fit:cover}.p-card .lbl{padding:8px;text-align:center;font-size:9px;background:#19191c}
+.mini{display:flex;justify-content:center;gap:10px;font-size:9px;color:#666;margin-top:10px}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">WOOD<span>CRAFT</span> PRO</div>
-<nav>
-<a href="#home">HOME</a>
-<a href="#about">ABOUT</a>
-<a href="#services">SERVICES</a>
-<a href="#projects">PROJECTS</a>
-<a href="#contact">CONTACT</a>
-<a href="https://wa.me/2349163364501?text=Hello%20WoodCraft%20I%20need%20service" class="btn-wa">Chat on WhatsApp</a>
-</nav>
-</header>
-
-<!-- HOME -->
-<section class="hero" id="home">
+<div class="top">WOODCRAFT PRO — WEBSITE DESIGN MOCKUP</div>
+<div class="wrap">
+<div class="left">
+<div class="head">
+<div class="logo">◈ WOODCRAFT <span>PRO</span></div>
+<div class="nav">
+<a class="active" href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a class="consult" href="https://wa.me/2349163364501?text=Hello%20WOODCRAFT%20PRO%20I%20need%20CONSULTATION%20-%2009163364501">CONSULT NOW</a>
+</div>
+</div>
+<div class="hero" id="home">
 <div>
-<h1>Reliable service.<br><span>Done right.</span></h1>
-<p style="color:var(--gray);max-width:500px;margin:18px 0">Practical help for your home or business, with clear quotes and care from start to finish. Serving Lagos & nearby areas. Call: 09163364501</p>
-<div style="display:flex;gap:12px;flex-wrap:wrap">
-<a href="https://wa.me/2349163364501?text=Hello%20I%20need%20free%20quote" class="btn-wa">Get a Quote → 09163364501</a>
-<a href="#projects" class="btn-dark">View Projects</a>
+<h1>Reliable service.<br>Done right.</h1>
+<p>Custom carpentry, interior design, and premium furniture crafted in Lagos. Built for homes that demand quality, durability, and style.</p>
+<div class="btns">
+<a class="b-orange" href="https://wa.me/2349163364501?text=Hello%20WoodCraft%20I%20need%20free%20quote%20-%2009163364501">Get a Free Quote →</a>
+<a class="b-ghost" href="#projects">View Projects</a>
 </div>
-<div style="margin-top:30px;display:flex;gap:24px"><div><b>500+</b><br><small style="color:var(--gray)">JOBS DONE</small></div><div><b>10 Years</b><br><small style="color:var(--gray)">EXPERIENCE</small></div><div><b>09163364501</b><br><small style="color:var(--gray)">WHATSAPP</small></div></div>
+<div class="stats">
+<div class="stat">✅<div><b>500+ Projects</b><small>Completed across Lagos</small></div></div>
+<div class="stat">🛠<div><b>10+ Years</b><small>Trusted experience</small></div></div>
+<div class="stat">◎<div><b>98% Satisfaction</b><small>Happy clients</small></div></div>
 </div>
-<div class="hero-img"><img src="https://images.unsplash.com/photo-1601058268499-e11691e32b88?w=900" alt="Carpenter"></div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" style="background:white">
-<h2 style="font-size:40px">Real workshop. Real craftsmen.</h2>
-<p style="max-width:650px;color:var(--gray);margin:16px 0">We started 10 years ago because many carpenters chop money and deliver nonsense. We no be like that. Every joint we check. We use good wood. We deliver on time. Based in Lagos - Lekki, Ikoyi, Ikeja.</p>
-<a href="#services" class="btn-dark">See What We Do →</a>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-<h2 style="font-size:40px">What we do best</h2>
-<div class="grid-3">
-<div class="card"><h3>🪑 Custom Furniture</h3><p style="color:var(--gray);margin-top:8px">Tables, chairs, wardrobes, kitchen cabinets built to last.</p><br><a href="#projects" style="font-weight:800;text-decoration:none;color:var(--dark)">View Projects →</a></div>
-<div class="card"><h3>🏠 Interior Finishing</h3><p style="color:var(--gray);margin-top:8px">Ceilings, flooring, wall paneling, full home finishing.</p><br><a href="#projects" style="font-weight:800;text-decoration:none;color:var(--dark)">View Projects →</a></div>
-<div class="card"><h3>🔧 Repair & Install</h3><p style="color:var(--gray);margin-top:8px">Fast neat repairs. Clear quote before we start.</p><br><a href="#contact" style="font-weight:800;text-decoration:none;color:var(--dark)">Contact Us →</a></div>
 </div>
-</section>
-
-<!-- PROJECTS - PHOTOS DEY HERE -->
-<section id="projects" style="background:white">
-<h2 style="font-size:40px">Recent Projects</h2><p style="color:var(--gray)">Your 4 fine photos - replace with your own later if you want</p>
-<div class="project-grid">
-<div class="project"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800" alt="Living room"><div class="overlay"><div><b>Modern Living — Lekki</b><br><small>Slat wall + custom furniture</small></div></div></div>
-<div class="project"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800" alt="Kitchen"><div class="overlay"><div><b>Luxury Kitchen — Ikoyi</b><br><small>Bespoke cabinets + island</small></div></div></div>
-<div class="project"><img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?w=800" alt="Workshop"><div class="overlay"><div><b>Our Workshop — Lagos</b><br><small>Where we build everything</small></div></div></div>
-<div class="project"><img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=800" alt="Carpenter working"><div class="overlay"><div><b>Craftsman at Work</b><br><small>Checked by hand</small></div></div></div>
+<div class="hero-img"><img src="https://images.unsplash.com/photo-1601058268499-e11691e32b88?w=900&q=80" alt="Carpenter"></div>
 </div>
-</section>
+<div class="feat" id="projects">
+<h2>Featured Projects</h2>
+<p>Modern living room & kitchen interiors — designed and built by WOODCRAFT PRO</p>
+</div>
+<div class="grid">
+<div class="proj"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"><div class="cap"><b>Modern Living Room</b><span>Custom joinery · Slat wall · Ambient lighting</span></div></div>
+<div class="proj"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&q=80"><div class="cap"><b>Luxury Kitchen</b><span>Bespoke kitchen · Island counter · Premium finish</span></div></div>
+</div>
+<div class="foot" id="contact">
+<div>Based in Lagos, Nigeria · licensed & insured · info@woodcraftpro.ng · +234 916 336 4501 · 09163364501</div>
+<div class="badge">Crafted with precision · Quality guaranteed</div>
+</div>
+</div>
 
-<!-- CONTACT -->
-<section id="contact">
-<div class="contact-box">
-<div>
-<h2 style="font-size:44px;line-height:1">Let's build<br>your project.</h2>
-<p style="color:#aaa;margin:20px 0">Call or WhatsApp now: <b style="color:white">09163364501</b><br>Lagos, Nigeria. We deliver anywhere. Get free quote in 30 mins.</p>
-<a href="https://
+<div class="phone-col">
+<div class="phone">
+<div class="p-head"><div class="logo" style="font-size:16px">◈ WOODCRAFT <span>PRO</span></div><div>☰</div></div>
+<div class="p-hero">
+<h1>Reliable service.<br>Done right.</h1>
+<p>Custom carpentry & interiors in Lagos.</p>
+<a class="b-orange" style="font-size:11px" href="https://wa.me/2349163364501?text=Free%20Quote">Get a Free Quote →</a>
+<div class="p-img"><img src="https://images.unsplash.com/photo-1601058268499-e11691e32b88?w=600&q=80"></div>
+</div>
+<div class="p-sec">
+<h3>Our Projects</h3>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600"><div class="lbl"><b>Modern Living Room · Custom joinery</b></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600"><div class="lbl"><b>Luxury Kitchen · Bespoke kitchen</b></div></div>
+<div class="mini"><span>500+ Projects</span><span>·</span><span>98% Satisfaction</span></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
