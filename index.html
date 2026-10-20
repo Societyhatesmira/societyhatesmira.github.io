@@ -4,202 +4,69 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WOODCRAFT PRO — Design My Space | Lagos 09163364501</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:#08080a;color:#fff;font-family:Inter,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;transform:translateZ(0)}
-a{text-decoration:none;color:inherit}
-@keyframes fadeUp{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,122,24,.45)}50%{box-shadow:0 0 0 14px rgba(255,122,24,0)}}
-.fade{animation:fadeUp .7s cubic-bezier(.16,1,.3,1) both;will-change:transform,opacity}
-.top{text-align:center;font-size:8px;letter-spacing:4px;color:#5a3a1e;padding:14px 0}
-.header{max-width:1240px;margin:0 auto 18px;width:92%;background:rgba(20,20,22,.85);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid #232326;border-radius:20px;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;position:sticky;top:10px;z-index:50;will-change:transform;transform:translateZ(0)}
-.logo{font-weight:900;font-size:18px;display:flex;gap:6px;letter-spacing:-.5px}.logo span{color:#ff7a18}
-.nav{display:flex;gap:18px;align-items:center}.nav button{color:#7a7a7a;background:none;border:none;font-size:11px;font-weight:700;cursor:pointer;transition:color .2s cubic-bezier(.16,1,.3,1)}.nav button:hover{color:#ff7a18}
-.btn-c{border:1px solid #5a3415;color:#ffb46a;background:#1c140a;padding:9px 16px;border-radius:10px;font-size:11px;font-weight:800;cursor:pointer;transition:all .3s}
+body{background:#08080a;color:#fff;font-family:Inter,sans-serif;overflow-x:hidden}
+.header{max-width:1240px;margin:0 auto 18px;width:92%;background:rgba(20,20,22,.85);backdrop-filter:blur(24px);border:1px solid #232326;border-radius:20px;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;position:sticky;top:10px;z-index:50}
+.logo{font-weight:900;font-size:18px;display:flex;gap:6px}.logo span{color:#ff7a18}
+.nav{display:flex;gap:18px;align-items:center}.nav button{color:#7a7a7a;background:none;border:none;font-size:11px;font-weight:700;cursor:pointer}.nav button:hover{color:#ff7a18}
+.btn-c{border:1px solid #5a3415;color:#ffb46a;background:#1c140a;padding:9px 16px;border-radius:10px;font-size:11px;font-weight:800;cursor:pointer}
 .wrap{max-width:1240px;margin:0 auto;width:92%}
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;background:linear-gradient(180deg,#16161a 0%,#141416 100%);border:1px solid #232326;border-radius:28px;padding:28px;position:relative;overflow:hidden;will-change:transform}
-.hero::before{content:"";position:absolute;top:-120px;right:-120px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,122,24,.18),transparent 70%);pointer-events:none}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;background:linear-gradient(180deg,#16161a 0%,#141416 100%);border:1px solid #232326;border-radius:28px;padding:28px;position:relative;overflow:hidden}
 .hero h1{font-size:54px;line-height:.9;font-weight:900;letter-spacing:-1.8px}
 .hero p{color:#8a8a8a;font-size:13px;line-height:1.7;margin:16px 0 24px;max-width:420px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.b-orange{background:#ff7a18;color:#000;padding:15px 26px;border-radius:12px;font-weight:900;font-size:13px;display:inline-flex;align-items:center;gap:8px;transition:all .4s cubic-bezier(.16,1,.3,1);will-change:transform;transform:translateZ(0);animation:pulse 2.5s infinite}
-.b-orange:hover{transform:translate3d(0,-3px,0);background:#ff8a2e;box-shadow:0 14px 32px rgba(255,122,24,.35)}
-.b-ghost{background:#1e1e22;border:1px solid #2a2a2e;color:#ff7a18;padding:14px 22px;border-radius:12px;font-weight:800;font-size:13px;transition:all .3s;cursor:pointer}
-.b-ghost:hover{background:#252529}
-.hero-img{border-radius:20px;overflow:hidden;height:440px;background:#1a1a1a;border:1px solid #2a2a2a;will-change:transform}.hero-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1);will-change:transform}.hero-img:hover img{transform:scale(1.06)}
-.stats{display:flex;gap:10px;margin-top:22px}.stat{flex:1;background:#1a1a1d;border:1px solid #26262a;border-radius:12px;padding:12px;display:flex;gap:8px;align-items:center;transition:all .4s cubic-bezier(.16,1,.3,1);will-change:transform}.stat:hover{transform:translate3d(0,-2px,0);border-color:#333}.stat b{font-size:11px}.stat small{font-size:9px;color:#666;display:block}
-.trust{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:10px;color:#777}.stars{color:#ff7a18;letter-spacing:1px}
-
-/* MIDDLE FLOATING BACKGROUND - YOUR FAVORITE */
-.bg-photo{margin-top:18px;height:560px;border-radius:28px;overflow:hidden;position:relative;background:#111;border:1px solid #232326;will-change:transform;transform:translateZ(0)}
-.bg-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;will-change:transform;transform:translateZ(0) scale(1.02);transition:transform 1.5s cubic-bezier(.16,1,.3,1)}
-.bg-photo:hover img{transform:translateZ(0) scale(1.08)}
-.bg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.68) 42%,rgba(0,0,0,.18) 100%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 60%);z-index:1}
-.bg-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:40px;max-width:560px;will-change:transform}
-.bg-content h2{font-size:48px;line-height:.9;font-weight:900;letter-spacing:-1.3px}.bg-content h2 span{color:#ff7a18;font-style:italic;font-family:Georgia,serif}
+.b-orange{background:#ff7a18;color:#000;padding:15px 26px;border-radius:12px;font-weight:900;font-size:13px;display:inline-flex;align-items:center;gap:8px}
+.b-ghost{background:#1e1e22;border:1px solid #2a2a2e;color:#ff7a18;padding:14px 22px;border-radius:12px;font-weight:800;font-size:13px;cursor:pointer}
+.hero-img{border-radius:20px;overflow:hidden;height:440px;background:#1a1a1a;border:1px solid #2a2a2a}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+.bg-photo{margin-top:18px;height:560px;border-radius:28px;overflow:hidden;position:relative;background:#111;border:1px solid #232326}
+.bg-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.bg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.68) 42%,rgba(0,0,0,.18) 100%)}
+.bg-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:40px;max-width:560px}
+.bg-content h2{font-size:48px;line-height:.9;font-weight:900}.bg-content h2 span{color:#ff7a18;font-style:italic;font-family:Georgia,serif}
 .bg-content p{color:#c8c8c8;font-size:13.5px;line-height:1.65;margin:16px 0 24px}
-
-/* REVIEWS - 10 DIFFERENTIATED */
 .reviews{margin-top:18px;background:#141416;border:1px solid #232326;border-radius:28px;padding:28px}
 .reviews-top{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:22px}
-.reviews-top h2{font-size:32px;line-height:.9;font-weight:900}.reviews-top h2 span{color:#ff7a18;font-size:18px;display:block;font-style:italic;font-family:Georgia,serif;margin-top:6px;font-weight:400}
+.reviews-top h2{font-size:32px;line-height:.9;font-weight:900}
 .review-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.rv{background:#1a1a1d;border:1px solid #26262a;border-radius:16px;padding:18px;position:relative;transition:all .4s cubic-bezier(.16,1,.3,1);will-change:transform;transform:translateZ(0)}
-.rv:hover{transform:translate3d(0,-4px,0);border-color:#333;box-shadow:0 10px 30px rgba(0,0,0,.3)}
-.rv::after{content:"✓ Verified Job";position:absolute;top:12px;right:12px;font-size:7px;letter-spacing:.5px;background:#1f2a1a;border:1px solid #2d4a22;color:#7fbf7f;padding:3px 7px;border-radius:20px}
+.rv{background:#1a1a1d;border:1px solid #26262a;border-radius:16px;padding:18px;position:relative}
 .rv-head{display:flex;gap:10px;align-items:center;margin-bottom:10px}
-.avatar{width:36px;height:36px;border-radius:100px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;flex-shrink:0}
-.avatar.AE{background:linear-gradient(135deg,#ff7a18,#ff3d00)}.avatar.DD{background:linear-gradient(135deg,#00d2ff,#3a7bd5)}.avatar.RW{background:linear-gradient(135deg,#111,#555);color:#fff}.avatar.EO{background:linear-gradient(135deg,#f857a6,#ff5858)}.avatar.SP{background:linear-gradient(135deg,#56ab2f,#a8e063);color:#000}.avatar.LP{background:linear-gradient(135deg,#8e2de2,#4a00e0)}.avatar.CO{background:linear-gradient(135deg,#ffb347,#ffcc33);color:#000}.avatar.FO{background:linear-gradient(135deg,#00c9ff,#92fe9d);color:#000}.avatar.BU{background:linear-gradient(135deg,#fc4a1a,#f7b733)}.avatar.MI{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff}
-.rv-head b{font-size:12px;display:block}.rv-head small{font-size:9px;color:#777}.rv-head span{margin-left:auto;color:#ff7a18;font-size:10px}.rv p{font-size:12px;line-height:1.6;color:#bbb}
-
-.feat-bar{margin-top:18px;background:#141416;border:1px solid #232326;border-radius:20px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#666;flex-wrap:wrap;gap:10px}
-.badge{border:1px solid #3d2a15;border-radius:20px;padding:6px 12px;color:#b06a2a;background:#19120a;font-size:9px}
-
-/* SLIDE PAGES - 120HZ SMOOTH */
-.page{position:fixed;inset:0;background:#08080a;z-index:100;transform:translate3d(100%,0,0);transition:transform .65s cubic-bezier(.77,0,.175,1);will-change:transform;overflow-y:auto;padding:20px;-webkit-overflow-scrolling:touch}
-.page.active{transform:translate3d(0,0,0)}
-.page-inner{max-width:1100px;margin:40px auto;background:#141416;border:1px solid #232326;border-radius:24px;padding:30px;animation:fadeUp .6s cubic-bezier(.16,1,.3,1) both}
-.page-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
-.close{width:44px;height:44px;border-radius:100px;background:#1e1e22;border:1px solid #2a2a2a;color:#fff;font-size:18px;cursor:pointer;transition:all .4s cubic-bezier(.16,1,.3,1);will-change:transform}.close:hover{background:#2a2a2e;transform:rotate(90deg) scale(1.05)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{background:#1a1a1d;border:1px solid #26262a;border-radius:16px;overflow:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);will-change:transform}.card:hover{transform:translate3d(0,-4px,0);border-color:#333}.card img{width:100%;height:200px;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}.card:hover img{transform:scale(1.06)}
-.card .cap{padding:14px;text-align:center}.card .cap b{font-size:14px}.card .cap span{font-size:10px;color:#ff7a18;display:block;margin-top:4px}
-.float-wa{position:fixed;bottom:18px;right:18px;width:56px;height:56px;background:#25D366;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 8px 24px rgba(37,211,102,.4);z-index:60;animation:pulse 2s infinite;will-change:transform;transform:translateZ(0)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:38px}.bg-photo{height:520px}.bg-content h2{font-size:34px}.bg-content{padding:24px}.review-grid,.grid2{grid-template-columns:1fr}.nav button:not(.btn-c){display:none}.stats{flex-direction:column}}
+.avatar{width:36px;height:36px;border-radius:100px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:38px}.review-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<div class="top fade">WOODCRAFT PRO — WEBSITE DESIGN MOCKUP • LAGOS • 09163364501</div>
-
-<div class="header fade" style="animation-delay:.1s">
-<div class="logo">◈ WOODCRAFT <span>PRO</span></div>
-<div class="nav">
-<button onclick="goHome()">Home</button>
-<button onclick="openPage('services')">Services</button>
-<button onclick="openPage('projects')">Projects</button>
-<button onclick="openPage('about')">About</button>
-<button onclick="openPage('contact')">Contact</button>
-<button class="btn-c" onclick="window.open('https://wa.me/2349163364501?text=Hello%20WOODCRAFT%20CONSULT%20NOW%20-%2009163364501','_blank')">CONSULT NOW</button>
-</div>
-</div>
-
 <div class="wrap">
-
-<div class="hero fade" style="animation-delay:.2s">
+<div class="hero">
 <div>
 <h1>Reliable service.<br>Done right.</h1>
-<p>Custom carpentry, interior design, and premium furniture crafted in Lagos. Built for homes that demand quality, durability, and style.</p>
+<p>Custom carpentry, interior design, and premium furniture crafted in Lagos.</p>
 <div class="btns">
-<a class="b-orange" href="https://wa.me/2349163364501?text=Hello%20WoodCraft%20PRO%20-%20I%20want%20to%20Design%20My%20Space%20-%2009163364501" target="_blank">Design My Space →</a>
+<a class="b-orange" href="https://wa.me/2349163364501?text=Hello%20WoodCraft%20PRO" target="_blank">Design My Space →</a>
 <button class="b-ghost" onclick="openPage('projects')">View Projects</button>
 </div>
-<div class="stats">
-<div class="stat">✅<div><b>500+ Projects</b><small>Completed across Lagos</small></div></div>
-<div class="stat">🛠<div><b>10+ Years</b><small>Trusted experience</small></div></div>
-<div class="stat">◎<div><b>98% Satisfaction</b><small>Happy clients</small></div></div>
 </div>
-<div class="trust"><span class="stars">★★★★★</span><span>4.9/5 on Google • 127 reviews • Licensed & insured</span></div>
+<div class="hero-img"><img src="hero.webp" alt="Carpenter - Your Photo"></div>
 </div>
-<div class="hero-img"><img loading="lazy" src="https://images.unsplash.com/photo-1601058268499-e11691e32b88?w=900&q=80&auto=format&fit=crop" alt="Carpenter"></div>
-</div>
-
-<!-- FLOATING BACKGROUND PHOTO WITH TEXT ON TOP -->
-<div class="bg-photo fade" style="animation-delay:.25s">
-<img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?w=1400&q=80&auto=format&fit=crop" alt="Workshop background">
+<div class="bg-photo">
+<img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?w=1400&q=80&auto=format&fit=crop" alt="Workshop">
 <div class="bg-content">
 <h2>Crafted in Lagos.<br><span>Built to last.</span></h2>
-<p>Every joint checked by hand. Solid wood, no MDF for main structure. We build for Lekki, Ikoyi, and homes that demand quality that lasts 10+ years. Real workshop, not just Instagram.</p>
-<div class="btns">
-<a class="b-orange" href="https://wa.me/2349163364501?text=Hello%20I%20want%20to%20Design%20My%20Space%20-%20Floating%20Background%20-%2009163364501" target="_blank">Design My Space →</a>
-<button class="b-ghost" onclick="openPage('about')" style="background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border-color:rgba(255,255,255,.15);color:white">Our Workshop</button>
-</div>
-<div class="trust" style="margin-top:18px"><span class="stars">★★★★★</span><span style="color:#ccc">Real workshop — Not just Instagram • 09163364501</span></div>
+<p>Every joint checked by hand. Solid wood, no MDF for main structure. We build for Lekki, Ikoyi, and homes that demand quality.</p>
 </div>
 </div>
-
-<!-- 10 REVIEWS WITH YOUR NAMES - DIFFERENTIATED COLORS -->
-<div class="reviews fade" style="animation-delay:.3s">
-<div class="reviews-top">
-<h2>What Lagos Clients Say<br><span>Real jobs. Real reviews.</span></h2>
-<div class="trust"><span class="stars">★★★★★</span> 4.9/5 — 127 verified jobs</div>
-</div>
+<div class="reviews">
+<div class="reviews-top"><h2>What Lagos Clients Say</h2></div>
 <div class="review-grid">
-<div class="rv"><div class="rv-head"><div class="avatar AE">AE</div><div><b>Amara Ezeh</b><small>Lekki • Kitchen • Mar 2026</small></div><span>★★★★★</span></div><p>"My Lekki kitchen island exactly like the 3D. Solid wood, neat finishing. No stories, 10/10. Worth every naira!"</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar DD">DD</div><div><b>David Danjuma</b><small>Ikoyi • Office • Feb 2026</small></div><span>★★★★★</span></div><p>"Executive office setup in Ikoyi — solid, clean. My clients dey compliment everyday. Delivered on time."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar RW">RW</div><div><b>Mr R. Williams</b><small>Ikoyi / VI • Apartment Kitchen • Jan 2026</small></div><span>★★★★★</span></div><p>"Full apartment kitchen in VI. Premium finish like abroad. Handle everything without stress. Professional."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar EO">EO</div><div><b>Ebuka Ohage</b><small>Festac • Workshop Cabinets • Dec 2025</small></div><span>★★★★★</span></div><p>"Built my Festac workshop cabinets strong. Heavy duty, no shaking. My tools organized well now."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar SP">SP</div><div><b>Sam Peterson</b><small>Apapa • House Wood Work • Nov 2025</small></div><span>★★★★★</span></div><p>"Full house wood work in Apapa — doors, wardrobes, kitchen. One contractor, all done. Quality."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar LP">LP</div><div><b>Lizzie Paul</b><small>Eko Atlantic • Office • Oct 2025</small></div><span>★★★★★</span></div><p>"Eko Atlantic office desks and paneling luxury! My team love the new workspace. Very classy."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar CO">CO</div><div><b>Chiamaka O.</b><small>Yaba • Living Room Slat • Sep 2025</small></div><span>★★★★★</span></div><p>"Slat wall and TV console clean die! Living room look like 30 million now. Thank you WoodCraft!"</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar FO">FO</div><div><b>Femi Ogunleye</b><small>Lekki • 3-Bedroom • Aug 2025</small></div><span>★★★★★</span></div><p>"3-bedroom full finishing. I just paid and collected keys. Stress-free, no extra charges."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar BU">BU</div><div><b>Blessing U.</b><small>Lekki • Fluted Panel • Jul 2025</small></div><span>★★★★★</span></div><p>"Fluted panel with light — Instagram worthy! My living room dey pop for every photo."</p></div>
-<div class="rv"><div class="rv-head"><div class="avatar MI">MI</div><div><b>Musa Ibrahim</b><small>VI • Shop Furniture • Jun 2025</small></div><span>★★★★★</span></div><p>"Shop furniture solid, customers dey ask where I do am. I don refer 3 friends already."</p></div>
-</div>
-</div>
-
-<div class="feat-bar fade" style="animation-delay:.35s">
-<div>Based in Lagos, Nigeria • info@woodcraftpro.ng • 09163364501</div>
-<div class="badge">✦ Crafted with precision • Quality guaranteed • 120Hz Smooth</div>
-</div>
-
-</div>
-
-<a class="float-wa" href="https://wa.me/2349163364501?text=Hello%20I%20want%20to%20Design%20My%20Space%20-%2009163364501" target="_blank">💬</a>
-
-<div id="page-services" class="page">
-<div class="page-inner">
-<div class="page-top"><h1 style="font-size:32px;font-weight:900">Services — Dark Luxury</h1><button class="close" onclick="closePage()">✕</button></div>
-<div class="grid2">
-<div class="card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop"><div class="cap"><b>Custom Furniture</b><span>Hardwood · Soft-close · Lekki finish</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700&q=80&auto=format&fit=crop"><div class="cap"><b>Interior Finishing</b><span>Slat wall · Ceiling · Paneling</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1601058268499-e11691e32b88?w=700&q=80&auto=format&fit=crop"><div class="cap"><b>Repair & Install</b><span>Fast neat repairs · Door alignment</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&q=80&auto=format&fit=crop"><div class="cap"><b>Luxury Kitchen</b><span>Bespoke kitchen · Island counter</span></div></div>
-</div>
-<br><a class="b-orange" href="https://wa.me/2349163364501?text=Design%20My%20Space%20Services" target="_blank">Design My Space →</a>
-</div>
-</div>
-
-<div id="page-projects" class="page">
-<div class="page-inner">
-<div class="page-top"><h1 style="font-size:32px;font-weight:900">Featured Projects</h1><button class="close" onclick="closePage()">✕</button></div>
-<div class="grid2">
-<div class="card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700&q=80"><div class="cap"><b>Modern Living Room</b><span>Custom joinery · Slat wall · Ambient lighting</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=700&q=80"><div class="cap"><b>Luxury Kitchen</b><span>Bespoke kitchen · Island counter · Premium finish</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&q=80"><div class="cap"><b>Master Wardrobe</b><span>Walk-in · LED · Soft close</span></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80"><div class="cap"><b>Executive Office</b><span>Solid wood · Ikoyi premium</span></div></div>
+<div class="rv"><div class="rv-head"><div class="avatar" style="background:#ff7a18">AE</div><div><b>Amara Ezeh</b><br><small>Lekki • Kitchen</small></div></div><p>"My Lekki kitchen island exactly like the 3D. Worth every naira!"</p></div>
+<div class="rv"><div class="rv-head"><div class="avatar" style="background:#00d2ff">DD</div><div><b>David Danjuma</b><br><small>Ikoyi • Office</small></div></div><p>"Executive office setup in Ikoyi — solid, clean."</p></div>
+<div class="rv"><div class="rv-head"><div class="avatar" style="background:#111;color:#fff">RW</div><div><b>Mr R. Williams</b><br><small>VI • Apartment</small></div></div><p>"Full apartment kitchen in VI. Premium finish."</p></div>
+<div class="rv"><div class="rv-head"><div class="avatar" style="background:#f857a6">EO</div><div><b>Ebuka Ohage</b><br><small>Festac • Workshop</small></div></div><p>"Built my Festac workshop cabinets strong."</p></div>
 </div>
 </div>
 </div>
-
-<div id="page-about" class="page">
-<div class="page-inner">
-<div class="page-top"><h1 style="font-size:32px;font-weight:900">Real workshop. Real craftsmen.</h1><button class="close" onclick="closePage()">✕</button></div>
-<p style="color:#aaa;line-height:1.8;font-size:13px">We started because many carpenters chop money and deliver nonsense. We no be like that. Every joint checked by hand. Good wood. On-time delivery. 10 years, 500+ jobs, 98% satisfaction. Based in Lagos — Lekki, Ikoyi, VI, Festac, Apapa, Eko Atlantic. WhatsApp only: 09163364501</p>
-</div>
-</div>
-
-<div id="page-contact" class="page">
-<div class="page-inner">
-<div class="page-top"><h1 style="font-size:32px;font-weight:900">Let's build your project</h1><button class="close" onclick="closePage()">✕</button></div>
-<p style="color:#777;margin-bottom:18px;font-size:13px">Free quote in 30 mins. Save this number: 09163364501</p>
-<a class="b-orange" style="width:100%;justify-content:center" href="https://wa.me/2349163364501?text=Hello%20Design%20My%20Space%20-%2009163364501" target="_blank">Chat on WhatsApp — 09163364501</a>
-</div>
-</div>
-
-<script>
-function openPage(id){
-  const el=document.getElementById('page-'+id);
-  el.classList.add('active');
-  document.body.style.overflow='hidden';
-}
-function closePage(){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.body.style.overflow='';
-}
-function goHome(){closePage();window.scrollTo({top:0,behavior:'smooth'})}
-</script>
 </body>
 </html>
